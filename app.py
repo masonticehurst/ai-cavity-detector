@@ -4,8 +4,8 @@ from flask_cors import CORS, cross_origin
 from PIL import Image
 from ML.predict_scripts.predict import runPrediction
 
-application = Flask(__name__)
-CORS(application, supports_credentials=True)
+app = Flask(__name__)
+CORS(app, supports_credentials=True)
 
 def process_image(input_image):
     """Processes and returns the xray image"""
